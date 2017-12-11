@@ -44,7 +44,7 @@ class <%= scope_module %>SurveysController < ApplicationController
   end
 
   def survey_params
-    rails4? ? params_whitelist : params[:survey_survey]
+    at_least_rails4? ? params_whitelist : params[:survey_survey]
   end
 
   def params_whitelist
