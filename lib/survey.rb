@@ -4,7 +4,7 @@ module ::Kernel
   end
 
   def in_rails_3(&block)
-    yield if block_given? unless at_least_rails4? ||
+    yield if block_given? unless at_least_rails4?
   end
 end
 
